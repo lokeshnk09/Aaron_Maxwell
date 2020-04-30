@@ -13,3 +13,9 @@ class TestAngle(unittest.TestCase):
         funny_angle = Angle(1081)
         self.assertEqual(1, funny_angle.degrees)
 
+    def test_arithmatic(self):
+        small_aggle = Angle(60)
+        big_angle = Angle(320)
+        total_angle = small_aggle.add(big_angle)
+        self.assertEqual(20, total_angle.degrees, 'Adding agle with wrap-around')
+
