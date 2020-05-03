@@ -2,10 +2,8 @@ from random import randint
 
 
 def guess_num():
-    print("I'm thinking of a number b/w 1 and 20.")
+    print("I'm thinking of a number b/w 1 and 20.\nGuess the number!")
     secret_num = randint(1, 20)
-
-    print('Guess number: ')
     count = 0
     while True:
         guess = int(input())
@@ -21,7 +19,6 @@ def guess_num():
         if count >= 5:
             print("You have exceeded the limit of {} guesses! Good Bye!".format(count))
             break
-
 
 
 if __name__ == '__main__':
