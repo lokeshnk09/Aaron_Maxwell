@@ -18,8 +18,10 @@ def guess_num():
         if guess == secret_num:
             print("You guessed it in {} guesses".format(count))
         count = count + 1
-        if count >= 6:
-            print("You guesses {} has exceeded the limit".format(count))
+        if count >= 5:
+            print("You have exceeded the limit of {} guesses! Good Bye!".format(count))
+            break
+
 
 
 if __name__ == '__main__':
